@@ -12,9 +12,17 @@ body {
     line-height: 1.6;
 }
 
+#header {
+    position: -webkit-sticky; /* Para compatibilidade com Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    background-color: #F6F8ED; /* Cor de fundo para o header */
+}
+
 header {
     background-color: #F6F8ED;
-    padding: 10px 0;
+    padding: 2px 0;
 }
 
 .container {
@@ -35,6 +43,11 @@ header {
     display: inline-block;
 }
 
+.logo a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor definida na classe logo */
+}
+
 nav {
     float: right;
 }
@@ -47,9 +60,9 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     display: inline;
-    margin-left: 20px;
+   
 }
 
 nav ul li a {
@@ -134,5 +147,8 @@ footer #logo {
 
     .section-container h2 {
         font-size: 35px;
+    }
+    .section-container p {
+        max-width: 250px;
     }
 }
