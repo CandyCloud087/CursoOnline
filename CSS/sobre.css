@@ -60,7 +60,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px 10px 0 10px;
+    padding: 10px 20px 0 20px;
     display: inline;
    
 }
@@ -72,9 +72,15 @@ nav ul li a {
 }
 
 .content {
-    padding: 20px 0;
+    padding: 10px 0;
     background-image: linear-gradient(#F6F8ED, #E0E4CE);
     text-align: center;
+    height: 100vh; /* Define a altura para preencher toda a tela */
+    min-height: 100vh; /* Garante que a altura mínima seja 100% da altura da tela */
+    display: flex; /* Utiliza flexbox para centralizar o conteúdo */
+    flex-direction: column; /* Alinha os itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
 }
 
 .section-container {
@@ -97,10 +103,6 @@ nav ul li a {
     margin: 35px auto; /* Centraliza o parágrafo */
     max-width: 600px; /* Define a largura máxima para o parágrafo */
     color: #2D3839;
-}
-
-.highlight {
-    color: #6E9987;
 }
 
 .container-footer {
