@@ -21,10 +21,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-content: baseline;
     width: 100%;
-    max-width: 100;
-    margin: 0 auto;
+    max-width: 1200px; /* Define a largura máxima */
+    margin: 0 auto; /* Centraliza o container */
     padding: 0 20px;
 }
 
@@ -44,7 +43,6 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-content: baseline;
     list-style: none;
 }
 
@@ -68,6 +66,8 @@ nav ul li a {
 
 .section-container {
     padding: 20px;
+    max-width: 800px; /* Define a largura máxima para centralizar */
+    margin: 0 auto; /* Centraliza o container */
 }
 
 .section-container h2 {
@@ -81,7 +81,8 @@ nav ul li a {
     font-size: 16px;
     font-weight: 900;
     text-align: center;
-    margin: 35px;
+    margin: 35px auto; /* Centraliza o parágrafo */
+    max-width: 600px; /* Define a largura máxima para o parágrafo */
     color: #2D3839;
 }
 
@@ -89,9 +90,10 @@ nav ul li a {
     color: #6E9987;
 }
 
-.container-footer{
+.container-footer {
     display: flex;
-    justify-content: space-between; 
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -110,6 +112,12 @@ footer p {
 footer #logo {
     font-size: 24px;
     margin: 10px 0;
+    border-right: 2px solid #fff; /* Adiciona a barra */
+    padding-right: 20px; /* Espaçamento à direita da barra */
+}
+
+.container-footer p:last-child {
+    padding-left: 20px; /* Espaçamento à esquerda da barra */
 }
 
 /* Responsividade */
