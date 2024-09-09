@@ -72,6 +72,7 @@ nav ul li a {
 }
 
 .content {
+    height: 100vh;
     padding: 40px 0;
     background-image: linear-gradient(#F6F8ED, #E0E4CE);
     text-align: center;
