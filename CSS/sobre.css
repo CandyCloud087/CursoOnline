@@ -72,7 +72,7 @@ nav ul li a {
 }
 
 .content {
-    padding: 60px 0;
+    padding: 40px 0;
     background-image: linear-gradient(#F6F8ED, #E0E4CE);
     text-align: center;
 }
@@ -91,21 +91,24 @@ nav ul li a {
 }
 
 .section-container p {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 900;
-    text-align: center;
-    margin: 35px auto; /* Centraliza o parágrafo */
-    max-width: 600px; /* Define a largura máxima para o parágrafo */
+    text-align: start;
+    margin: 25px;
+    max-width: 300px; /* Define a largura máxima para o parágrafo */
     color: #2D3839;
 }
 
 .section-content{
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-content img{
-    max-width: 300px;
+    width: 300px;
 }
 
 .highlight {
