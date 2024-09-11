@@ -145,9 +145,6 @@ footer #logo {
     font-size: 17px;
     margin: 0 0px 6px;
     padding: 6px;
-}
-
-.footer-link i:hover {
     cursor: pointer;
 }
 
@@ -180,7 +177,7 @@ footer p {
     .section-container p {
         text-align: center;
     }
-    
+
     .container-footer p {
         border-left: 2px solid #fff;
         padding-left: 20px;
