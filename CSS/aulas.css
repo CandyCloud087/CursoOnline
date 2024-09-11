@@ -195,6 +195,11 @@ footer p {
     .section-container h2 {
         font-size: 35px;
     }
+    
+    .section-container p {
+        text-align: center;
+    }
+
     .container-footer p {
         border-left: 2px solid #fff;
         padding-left: 20px;
