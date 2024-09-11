@@ -116,16 +116,11 @@ nav ul li a {
 }
 
 .content-video{
-    background-color: #d8dec5;
-    width: auto;
-    height: auto;
-    border-radius: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
     margin: 20px 0 30px 0;
+    justify-content: center;
 }
 
 .content-video iframe{
@@ -160,10 +155,6 @@ nav ul li a {
     font-weight: 900;
     margin-bottom: 45px;
     color: #27191C;
-}
-
-.aulas img{
-    width: 300px;
 }
 
 .highlight {
@@ -263,7 +254,7 @@ footer p {
     }
 
     .content-video iframe{
-        max-width: 400px;
+        max-width: 350px;
         max-height: 200px;
     }
 }
