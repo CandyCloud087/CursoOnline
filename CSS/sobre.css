@@ -79,9 +79,13 @@ nav ul li a {
 }
 
 .section-container {
+    display: flex;
     padding: 20px;
-    max-width: 800px; /* Define a largura máxima para centralizar */
-    margin: 0 auto; /* Centraliza o container */
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-container h2 {
@@ -98,18 +102,6 @@ nav ul li a {
     margin: 25px;
     max-width: 300px; /* Define a largura máxima para o parágrafo */
     color: #2D3839;
-}
-
-.section-content{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-content img{
-    width: 300px;
 }
 
 .highlight {
