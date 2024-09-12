@@ -72,10 +72,14 @@ nav ul li a {
 }
 
 .content {
+    display: flex;
     height: 100vh;
     padding: 40px 0;
     background-image: linear-gradient(#F6F8ED, #E0E4CE);
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-container {
