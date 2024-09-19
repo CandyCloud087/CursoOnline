@@ -127,7 +127,9 @@ nav ul li a {
     border-radius: 50%; /* torna a imagem redonda */
     object-fit: scale-down; /* corta a imagem para preencher o círculo */
     overflow: hidden; /* esconde qualquer parte da imagem que saia do círculo */
-} p {
+}
+
+.card .card1 .card2 p {
     display: flex;
     font-size: 20px;
     text-align: start;
