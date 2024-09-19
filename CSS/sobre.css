@@ -114,14 +114,14 @@ nav ul li a {
     gap: 20px; /* Espaçamento entre os cards */
 }
 
-.card{
+.card .card1{
     flex: 1 1 calc(33.333% - 40px); /* Garante que cada card ocupe 1/3 do espaço, com margem */
     max-width: 300px; /* Define uma largura máxima para os cards */
     text-align: center; /* Centraliza o texto dentro dos cards */
     margin: 10px 0 10px 0;
 }
 
-.card p {
+.card .card1 p {
     display: flex;
     font-size: 20px;
     text-align: start;
@@ -141,6 +141,15 @@ nav ul li a {
     border-radius: 50%; /* torna a imagem redonda */
     object-fit: cover; /* corta a imagem para preencher o círculo */
     overflow: hidden; /* esconde qualquer parte da imagem que saia do círculo */
+}
+
+.card1 img{
+    width: 200px; /* ajuste o tamanho como preferir */
+    height: 200px; /* o mesmo valor para garantir que seja um círculo */
+    border-radius: 50%; /* torna a imagem redonda */
+    object-fit: scale-down; /* corta a imagem para preencher o círculo */
+    object-position: 130% 100%;
+    overflow: hidden; 
 }
 
 .highlight {
