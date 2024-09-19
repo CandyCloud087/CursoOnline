@@ -139,7 +139,7 @@ nav ul li a {
     width: 200px; /* ajuste o tamanho como preferir */
     height: 200px; /* o mesmo valor para garantir que seja um círculo */
     border-radius: 50%; /* torna a imagem redonda */
-    object-fit: cover; /* corta a imagem para preencher o círculo */
+    object-fit: scale-down; /* corta a imagem para preencher o círculo */
     overflow: hidden; /* esconde qualquer parte da imagem que saia do círculo */
 }
 
