@@ -257,7 +257,7 @@ footer p {
     }
 
     .content-video iframe{
-        max-width: 350px;
-        max-height: 200px;
+        max-width: 300px;
+        max-height: 180px;
     }
 }
