@@ -73,7 +73,6 @@ nav ul li a {
 
 .content {
     display: flex;
-    height: 100vh;
     padding: 40px 0;
     background-image: linear-gradient(#F6F8ED, #E0E4CE);
     text-align: center;
@@ -84,7 +83,7 @@ nav ul li a {
 
 .section-container {
     display: flex;
-    padding: 20px;
+    padding: 40px;
     max-width: 800px;
     margin: 0 auto;
     flex-direction: column;
@@ -108,8 +107,51 @@ nav ul li a {
     color: #2D3839;
 }
 
+.colaboration{
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha quando exceder o número de itens */
+    justify-content: center; /* Centraliza os itens na tela */
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card{
+    flex: 1 1 calc(33.333% - 40px); /* Garante que cada card ocupe 1/3 do espaço, com margem */
+    max-width: 300px; /* Define uma largura máxima para os cards */
+    text-align: center; /* Centraliza o texto dentro dos cards */
+    margin: 10px 0 10px 0;
+}
+
+.card p {
+    font-size: 20px;
+}
+
+.colaboration::after {
+    content: "";
+    flex-basis: 100%; /* Força a quebra de linha após o terceiro elemento */
+    order: 3; /* Garantir que 3 elementos fiquem na primeira linha */
+  }
+
+.card img{
+    width: 200px; /* ajuste o tamanho como preferir */
+    height: 200px; /* o mesmo valor para garantir que seja um círculo */
+    border-radius: 50%; /* torna a imagem redonda */
+    object-fit: cover; /* corta a imagem para preencher o círculo */
+    overflow: hidden; /* esconde qualquer parte da imagem que saia do círculo */
+}
+
 .highlight {
     color: #6E9987;
+}
+
+.highlight-name {
+    color: #959595;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.highlight-function{
+    color: #118F8F;
+    font-weight: bold;
 }
 
 .container-footer {
@@ -191,14 +233,19 @@ footer p {
         margin-left: 20px;
     }
 
-    footer{
+    .colaboration {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
 
-    img{
-        display: none;
-    }
+    
 }
